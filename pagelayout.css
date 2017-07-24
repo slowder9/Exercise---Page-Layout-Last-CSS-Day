@@ -1,0 +1,155 @@
+/*
+
+    COLORS
+
+    Pink   : #ffdddd
+    Purple : #ddddff
+    Green  : #ddffdd
+    Blue   : #ddffff
+    Yellow : #ffffdd
+
+    BREAKPOINTS
+
+    600px
+    1100px
+
+*/
+
+body{
+    font-family: Palatino, Times, serif;
+    background-color: #ddffdd;
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#logo{
+    text-align: center;
+}
+
+#main_nav{
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 5em;
+}
+
+#main_nav a{
+    display: block;
+    padding: 10px 2%;
+    background: #ffdddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+#main_nav a:hover{
+    background: #ddddff;
+}
+
+#main_content{
+    background: #ddffff;
+}
+
+
+#sidebar_content div{
+    margin-bottom: 20px;
+    background: #ffffdd;
+}
+
+ul{
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+h1, h2, h3{
+    color: #009999;
+}
+
+h2, h3{
+    margin-bottom: 0;
+}
+
+a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+header{ 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddddff;
+}
+
+#site_footer{
+    text-align: center;
+    background: khaki;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#site_footer a{
+    padding-right: 7px;
+}
+
+#site_container{
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+@media (min-width: 600px){
+    #main_nav{
+        display: flex;
+        flex-direction: row;
+        margin-right: -15px;
+    }
+    #sidebar_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #ffffdd;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1100px){
+    #logo{
+        text-align: left;
+        padding-right: 900px;
+    }
+    #main_nav{
+        display: flex;
+        flex-direction: row;
+        float: right;
+        position: relative;
+        bottom: 75px;
+    }
+    #main_nav a{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    #main_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 100%;
+        margin-bottom: 20px;
+    }
+    #main_content div{
+        display: block;
+    }
+}
+
+
